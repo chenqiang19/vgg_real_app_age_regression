@@ -9,7 +9,7 @@ This is implementation of the paper **"On the effect of age perception biases fo
 4. cudnn 7.6.5
 5. Linux Ubuntu 18.04 LTS
   ```Shell
-  git clone https://github.com/qiangchen19/vgg_real_app.git
+  git clone https://github.com/qiangchen19/vgg_real_app_age_regression.git
   ```
 
 # Data Setup
@@ -17,14 +17,18 @@ This is implementation of the paper **"On the effect of age perception biases fo
 
 2. Create Directory 
   ```Shell
-  mkdir data/data_h5
+  mkdir data/output
   mkdir data/data_h5
   ```
 # Intructions
 
 This code is support for pytorch. 
 
-Running the code (training and predicting).
+Running the code (training and predicting) in the main function.
+
+If you want to training, please set train_model to True.
+
+If you want to test or predict, please set train_model to False.
 
 Parameters are defined as: [data_path, train_model (True|False),  stage_num (1|2), lr (current), batch_size, epochs, lr (stage 1), optims(Adam), use_gpu].
 
